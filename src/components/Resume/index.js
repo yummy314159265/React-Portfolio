@@ -14,11 +14,11 @@ export default function Resume() {
             </p>
             <div className='content is-medium'>
                 <div className='columns'>
-                    <div className='column is-6'>
+                    <div className='column is-6 has-text-centered'>
                         <p className='has-text-weight-semibold'>
                             Front-end Skills
                         </p>
-                        <ul>
+                        <ul className='no-bullet'>
                             <li>
                                 HTML
                             </li>
@@ -36,11 +36,11 @@ export default function Resume() {
                             </li>
                         </ul>
                     </div>
-                    <div className='column is-6'>
+                    <div className='column is-6 has-text-centered'>
                         <p className='has-text-weight-semibold'>
                             Back-end Skills
                         </p>
-                        <ul>
+                        <ul className='no-bullet'>
                             <li>
                                 Node
                             </li>
