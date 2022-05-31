@@ -9,7 +9,7 @@ export default function AboutMe() {
                 <h1 className='is-size-2'>
                     About me
                 </h1>
-                <figure className='image is-128x128 fixed-margin ml-5'>
+                <figure className='image is-128x128 ml-5'>
                     <img className='is-rounded' src={profilePic} alt='My profile pic' />
                 </figure>
                 <p className='has-text-justified'>
