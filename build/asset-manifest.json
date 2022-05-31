@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.9ec1c4f4.css",
+    "main.js": "/React-Portfolio/static/js/main.af39d84d.js",
+    "static/media/tech-resume.docx": "/React-Portfolio/static/media/tech-resume.ef2487f627d02fd14791.docx",
+    "static/media/profile-pic.jpg": "/React-Portfolio/static/media/profile-pic.e47619d9cb733a62b828.jpg",
+    "static/media/logo-stackoverflow.png": "/React-Portfolio/static/media/logo-stackoverflow.727ada1ad4c267cbc452.png",
+    "index.html": "/React-Portfolio/index.html",
+    "main.9ec1c4f4.css.map": "/React-Portfolio/static/css/main.9ec1c4f4.css.map",
+    "main.af39d84d.js.map": "/React-Portfolio/static/js/main.af39d84d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ec1c4f4.css",
+    "static/js/main.af39d84d.js"
+  ]
+}
