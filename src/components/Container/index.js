@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
 import Navigation from '../Navigation/index.js';
 import Portfolio from '../Portfolio/index.js';
 import Contact from '../Contact/index.js';
