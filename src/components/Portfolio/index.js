@@ -13,23 +13,63 @@ import lgJateProject from './assets/images/jate-project/lg.png';
 export default function Portfolio() {
     const [lgImg, setLgImg] = useState(lgApeSimProject);
     const [lgAlt, setLgAlt] = useState('Ape Simulator project large');
-    
-    const handleBigImgChange = (img) => {
-        setLgImg(img);
+    const [github, setGithub] = useState('https://github.com/yummy314159265/StockMarketSimulator')
+    const [deployment, setDeployment] = useState('https://yummy314159265.github.io/StockMarketSimulator/')
+    const [selected, setSelected] = useState() 
 
-        if (img === lgApeSimProject) {
+    const projects = [
+        {
+            smImg: smApeSimProject,
+            lgImg: lgApeSimProject,
+            alt: 'Ape Simulator project small',
+            github: 'https://github.com/yummy314159265/StockMarketSimulator',
+            deployment: 'https://yummy314159265.github.io/StockMarketSimulator/'
+        },
+        {
+            smImg: smTechBlogProject,
+            lgImg: lgTechBlogProject,
+            alt: 'Tech Blog project small',
+            github: 'https://github.com/yummy314159265/TechBlog',
+            deployment: 'https://ancient-wildwood-80548.herokuapp.com/'
+        },
+        {
+            smImg: smUfoProject,
+            lgImg: lgUfoProject,
+            alt: 'UFO project small',
+            github: 'https://github.com/yummy314159265/Project2-Heroku',
+            deployment: 'https://ufo-project.herokuapp.com/'
+        },
+        {
+            smImg: smJateProject,
+            lgImg: lgJateProject,
+            alt: 'Just Another Text Editor project small',
+            github: 'https://github.com/yummy314159265/JATE',
+            deployment: 'https://mighty-tor-43060.herokuapp.com/'
+        },
+    ]
+
+    const handleSelectedChange = (key) => {
+        setSelected(key);
+    }
+    
+    const handleImgChange = (lgImg, github, deployment) => {
+        setLgImg(lgImg);
+        setGithub(github);
+        setDeployment(deployment);
+
+        if (lgImg === lgApeSimProject) {
             setLgAlt('Ape Simulator large');
         }
         
-        if (img === lgUfoProject) {
+        if (lgImg === lgUfoProject) {
             setLgAlt('UFO project large');
         }
 
-        if (img === lgTechBlogProject) {
+        if (lgImg === lgTechBlogProject) {
             setLgAlt('Tech Blog project large');
         }
 
-        if (img === lgJateProject) {
+        if (lgImg === lgJateProject) {
             setLgAlt('Just Another Text Editor project large');
         }
     }
@@ -37,15 +77,44 @@ export default function Portfolio() {
     return (
         <div className='container'>
             <div className='tile is-ancestor'>
-                <div className='tile is-4 is-vertical is-parent'>
-                    <Project handleBigImgChange={handleBigImgChange} smImg={smApeSimProject} lgImg={lgApeSimProject} alt={'Ape Simulator project small'} />
-                    <Project handleBigImgChange={handleBigImgChange} smImg={smUfoProject} lgImg={lgUfoProject} alt={'UFO project small'} />
-                    <Project handleBigImgChange={handleBigImgChange} smImg={smTechBlogProject} lgImg={lgTechBlogProject} alt={'Tech Blog project small'} />
-                    <Project handleBigImgChange={handleBigImgChange} smImg={smJateProject} lgImg={lgJateProject} alt={'Just Another Text Editor project small'} />
+                <div className='tile is-3 is-vertical is-parent'>
+                    {projects.map((project, index) => 
+                        <Project 
+                            key={index}
+                            index={index}
+                            handleImgChange={handleImgChange} 
+                            handleSelectedChange={handleSelectedChange} 
+                            smImg={project.smImg} 
+                            lgImg={project.lgImg} 
+                            alt={project.alt} 
+                            github={project.github}
+                            deployment={project.deployment}
+                            selected={selected} 
+                        />
+                    )}
                 </div>
                 <div className='tile is-parent'>
-                    <figure className='tile is-child image is-4by3'>
-                        <img src={lgImg} alt={lgAlt} />
+                    <div id='project-links-container' className='box has-background-info'>
+                        <a 
+                            className='has-text-white is-size-4'
+                            href={github}
+                            rel='noreferrer'
+                            target='_blank'
+                        >
+                            github |
+                        </a>
+                        
+                        <a 
+                            className='has-text-white is-size-4'
+                            href={deployment}
+                            rel='noreferrer'
+                            target='_blank'
+                        >
+                            {' '}deployment
+                        </a>
+                    </div>
+                    <figure className='tile is-child image is-16by9'>  
+                        <img className='box' src={lgImg} alt={lgAlt} />
                     </figure>
                 </div>
             </div>

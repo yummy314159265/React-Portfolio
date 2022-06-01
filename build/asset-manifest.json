@@ -1,16 +1,26 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.9ec1c4f4.css",
-    "main.js": "/React-Portfolio/static/js/main.af39d84d.js",
+    "main.css": "/React-Portfolio/static/css/main.59cfd702.css",
+    "main.js": "/React-Portfolio/static/js/main.ffa6fac6.js",
     "static/media/tech-resume.docx": "/React-Portfolio/static/media/tech-resume.ef2487f627d02fd14791.docx",
     "static/media/profile-pic.jpg": "/React-Portfolio/static/media/profile-pic.e47619d9cb733a62b828.jpg",
+    "static/media/lg.png": "/React-Portfolio/static/media/lg.68b4ecacc37ec93126ee.png",
+    "static/media/sm.png": "/React-Portfolio/static/media/sm.70f3317649f344e1e70e.png",
+    "static/media/python-logo.png": "/React-Portfolio/static/media/python-logo.cbc9e9a202e33a5a09bd.png",
+    "static/media/react-logo.png": "/React-Portfolio/static/media/react-logo.7868f2796037441666af.png",
+    "static/media/webpack-logo.png": "/React-Portfolio/static/media/webpack-logo.5d76e907d07397f44bf1.png",
+    "static/media/mongodb-logo.png": "/React-Portfolio/static/media/mongodb-logo.9fb2a5d04c408b9b76aa.png",
+    "static/media/jquery-logo.png": "/React-Portfolio/static/media/jquery-logo.e2a7a29f7950faba98d4.png",
+    "static/media/javascript-logo.png": "/React-Portfolio/static/media/javascript-logo.507d485431de2eafa2cd.png",
+    "static/media/css-logo.png": "/React-Portfolio/static/media/css-logo.6b2ece56387afae440f7.png",
     "static/media/logo-stackoverflow.png": "/React-Portfolio/static/media/logo-stackoverflow.727ada1ad4c267cbc452.png",
+    "static/media/express-logo.svg": "/React-Portfolio/static/media/express-logo.493a0dd08d8d77a341e2d22676607a29.svg",
     "index.html": "/React-Portfolio/index.html",
-    "main.9ec1c4f4.css.map": "/React-Portfolio/static/css/main.9ec1c4f4.css.map",
-    "main.af39d84d.js.map": "/React-Portfolio/static/js/main.af39d84d.js.map"
+    "main.59cfd702.css.map": "/React-Portfolio/static/css/main.59cfd702.css.map",
+    "main.ffa6fac6.js.map": "/React-Portfolio/static/js/main.ffa6fac6.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ec1c4f4.css",
-    "static/js/main.af39d84d.js"
+    "static/css/main.59cfd702.css",
+    "static/js/main.ffa6fac6.js"
   ]
 }
