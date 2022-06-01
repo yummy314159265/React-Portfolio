@@ -8,9 +8,9 @@ export default function Logos({columnAmt, columnName, logos}) {
                 {columnName}
             </p>
             <ul>
-                {logos.map(logo => {
+                {logos.map((logo, index) => {
                     return (
-                        <li>
+                        <li key={index}>
                             <img src={logo.img} alt={logo.alt} />
                         </li>
                     )

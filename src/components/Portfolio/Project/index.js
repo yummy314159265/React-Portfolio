@@ -1,14 +1,16 @@
 import React from 'react';
 import './style.css';
 
-export default function Project({handleBigImgChange, lgImg, smImg, alt}) {
+export default function Project({index, handleImgChange, handleSelectedChange, lgImg, smImg, alt, github, deployment, selected}) {
     return (
-        <figure className='tile is-child image is-3by1'>
+        <figure className={(selected === index) ? 'tile is-child image is-2by1 no-blur' : 'tile is-child image is-2by1 blur'}>
             <a
                 href='#portfolio'
-                onClick={()=>handleBigImgChange(lgImg)}    
+                onMouseEnter={() => handleSelectedChange(index)}
+                onMouseLeave={() => handleSelectedChange()}
+                onClick={()=> handleImgChange(lgImg, github, deployment)}    
             >
-                <img src={smImg} alt={alt} />
+                <img className='box' src={smImg} alt={alt} />
             </a>
         </figure>
     )

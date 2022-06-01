@@ -5,19 +5,20 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 import resume from './assets/download/tech-resume.docx';
 // frontend logos
-import htmlLogo from './assets/images/html-logo.png';
-import cssLogo from './assets/images/css-logo.png';
-import javascriptLogo from './assets/images/javascript-logo.png';
-import jqueryLogo from './assets/images/jquery-logo.png';
-import githubLogo from './assets/images/github-logo.png';
+import htmlLogo from './assets/images/frontend-logos/html-logo.png';
+import cssLogo from './assets/images/frontend-logos/css-logo.png';
+import javascriptLogo from './assets/images/frontend-logos/javascript-logo.png';
+import jqueryLogo from './assets/images/frontend-logos/jquery-logo.png';
+import reactLogo from './assets/images/frontend-logos/react-logo.png';
+import githubLogo from './assets/images/frontend-logos/github-logo.png';
 // backend logos
-import nodeLogo from './assets/images/node-logo.png';
-import expressLogo from './assets/images/express-logo.svg';
-import reactLogo from './assets/images/react-logo.png';
-import mysqlLogo from './assets/images/mysql-logo.png';
-import mongodbLogo from './assets/images/mongodb-logo.png';
-import pythonLogo from './assets/images/python-logo.png';
-import webpackLogo from './assets/images/webpack-logo.png';
+import nodeLogo from './assets/images/backend-logos/node-logo.png';
+import expressLogo from './assets/images/backend-logos/express-logo.svg';
+import mysqlLogo from './assets/images/backend-logos/mysql-logo.png';
+import mongodbLogo from './assets/images/backend-logos/mongodb-logo.png';
+import pythonLogo from './assets/images/backend-logos/python-logo.png';
+import webpackLogo from './assets/images/backend-logos/webpack-logo.png';
+import graphqlLogo from './assets/images/backend-logos/graphql-logo.png';
 
 export default function Resume() {
     const columnAmt = 2;
@@ -40,6 +41,10 @@ export default function Resume() {
             alt: 'jquery logo',
         },
         {
+            img: reactLogo,
+            alt: 'react logo',
+        },
+        {
             img: githubLogo,
             alt: 'github logo',
         }
@@ -53,10 +58,6 @@ export default function Resume() {
         {
             img: expressLogo,
             alt: 'express logo',
-        },
-        {
-            img: reactLogo,
-            alt: 'react logo',
         },
         {
             img: mysqlLogo,
@@ -73,6 +74,10 @@ export default function Resume() {
         {
             img: webpackLogo,
             alt: 'webpack logo',
+        },
+        {
+            img: graphqlLogo,
+            alt: 'graphql logo'
         }
     ]
 
